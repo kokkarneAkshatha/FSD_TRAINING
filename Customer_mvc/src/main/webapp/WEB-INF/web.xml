@@ -1,0 +1,59 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>CustomerdetailServlet</servlet-name>
+  	<display-name>CustomerdetailServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.example.view.CustomerdetailServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Customervalidatonrvlet</servlet-name>
+  	<display-name>Customervalidatonrvlet</display-name>
+  	<description></description>
+  	<servlet-class>com.example.controller.Customervalidatonrvlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name> SuccessServlet</servlet-name>
+  	<display-name> SuccessServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.example.view.SuccessServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ErrorServlet</servlet-name>
+  	<display-name>ErrorServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.example.view.ErrorServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Cust_Error_Singlepage</servlet-name>
+  	<display-name>Cust_Error_Singlepage</display-name>
+  	<description></description>
+  	<servlet-class>com.example.view.Cust_Error_Singlepage</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>CustomerdetailServlet</servlet-name>
+  	<url-pattern>/custome_display</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Customervalidatonrvlet</servlet-name>
+  	<url-pattern>/customer_validation</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>SuccessServlet</servlet-name>
+  	<url-pattern>/success.view</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ErrorServlet</servlet-name>
+  	<url-pattern>/Error_Servlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Cust_Error_Singlepage</servlet-name>
+  	<url-pattern>/Cust_Error_Singlepage</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+  <welcome-file>index.html</welcome-file></welcome-file-list>
+</web-app>
